@@ -15,14 +15,14 @@ random.seed()
 dna = ''
 
 for i in range(1,31):
-    r = random.randint(1, 10)
-    if   r <= 3:
+    r = random.randint(1, 100)
+    if   r <= 30:
         dna += 'A'
-    elif r > 3 and r <= 6:
+    elif r > 30 and r <= 60:
         dna += 'T'
-    elif r > 6 and r <= 8:
+    elif r > 60 and r <= 80:
         dna += 'C'
-    elif r > 8 and r <= 10:
+    elif r > 80 and r <= 100:
         dna += 'G'
 
 at_percent = (dna.count('A') + dna.count('T')) / len(dna)
