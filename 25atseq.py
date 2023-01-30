@@ -10,9 +10,24 @@
 
 import random
 
-nucleotides = ['A', 'T', 'C', 'G']
+random.seed()
 
-print(random.choices(nucleotides)
+dna = ''
+
+for i in range(1,31):
+    r = random.randint(1, 10)
+    if   r <= 3:
+        dna += 'A'
+    elif r > 3 and r <= 6:
+        dna += 'T'
+    elif r > 6 and r <= 8:
+        dna += 'C'
+    elif r > 8 and r <= 10:
+        dna += 'G'
+
+at_percent = (dna.count('A') + dna.count('T')) / len(dna)
+
+print(len(dna), at_percent, dna)
       
 """
 python3 25atseq.py
