@@ -6,27 +6,19 @@
 # Variation: try this with the range() function and slice syntax
 
 dna = 'ACTGAAAAAAAAAAA'
-
-rev = '' 
-
-revcomp = ''
+anti = ''
 
 for i in dna:
-    rev = i + rev
-
-for i in rev:
     if i == 'A':
-        revcomp += 'T'
+        anti = 'T' + anti
     elif i == 'C':
-        revcomp += 'G'
+        anti = 'G' + anti
     elif i == 'G':
-        revcomp += 'C'
+        anti = 'C' + anti
     elif i == 'T':
-        revcomp += 'A'
+        anti = 'A' + anti
 
-print(revcomp)
-        
-
+print(anti)
 
 """
 python3 26anti.py
