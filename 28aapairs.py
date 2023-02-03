@@ -7,15 +7,13 @@
 
 # Hint: if you get stuck for more than 10 minutes, get help
 
-aa = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
+aa = 'ACDEFGHIKLMNPQRSTVWY'
 count = 0
 
 for i in range(len(aa)):
-    for j in range(len(aa)):
-        if aa[i] != 0 and aa[j] != 0 and aa[i] != aa[j]:
-            print(aa[i], aa[j])
-            count += 1
-    aa[i] = 0
+    for j in range(i+1, len(aa)):
+        print (aa[i],aa[j])
+        count += 1
 
 print(count)
 
