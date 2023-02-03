@@ -7,15 +7,15 @@
 
 # Hint: if you get stuck for more than 10 minutes, get help
 
-aa1 = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
+aa = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
 count = 0
 
-for i in range(len(aa1)):
-    for j in range(len(aa1)):
-        if aa1[i] != 0 and aa1[j] != 0 and aa1[i] != aa1[j]:
-            print(aa1[i], aa1[j])
+for i in range(len(aa)):
+    for j in range(len(aa)):
+        if aa[i] != 0 and aa[j] != 0 and aa[i] != aa[j]:
+            print(aa[i], aa[j])
             count += 1
-    aa1[i] = 0
+    aa[i] = 0
 
 print(count)
 
