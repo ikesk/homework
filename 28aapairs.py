@@ -8,17 +8,14 @@
 # Hint: if you get stuck for more than 10 minutes, get help
 
 aa1 = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
-aa2 = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
-
 count = 0
 
 for i in range(len(aa1)):
-    for j in range(len(aa2)):
-        if aa1[i] != 0 and aa2[j] != 0 and aa1[i] != aa2[j]:
-            print(aa1[i], aa2[j])
+    for j in range(len(aa1)):
+        if aa1[i] != 0 and aa1[j] != 0 and aa1[i] != aa1[j]:
+            print(aa1[i], aa1[j])
             count += 1
     aa1[i] = 0
-    aa2[i] = 0
 
 print(count)
 
