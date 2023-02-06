@@ -15,12 +15,12 @@ seq = 'ACGACGCAGGAGGAGAGTTTCAGAGATCACGAATACATCCATATTACCCAGAGAGAG'
 w = 11
 gc = 0
 
-for i in range(0, len(seq)-w+1):
-    for j in seq[i:i+w]:
-        if j == 'G' or j == 'C':
-            gc += 1
-    print(f'{i} {seq[i:i+w]} {gc/w:.4f}')
-    gc = 0
+for i in range(0, len(seq) - w + 1):
+	for j in seq[i:i + w]:
+		if j == 'G' or j == 'C':
+			gc += 1
+	print(f'{i} {seq[i:i + w]} {gc / w:.4f}')
+	gc = 0
 """
 python3 26gcwin.py
 0 ACGACGCAGGA 0.6364

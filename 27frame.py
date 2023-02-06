@@ -9,8 +9,8 @@
 dna = 'ATGGCCTTT'
 
 for pos in range(0, len(dna), 3):
-    for frame in range(3):
-        print(pos + frame, frame, dna[pos + frame])
+	for frame in range(3):
+		print(pos + frame, frame, dna[pos + frame])
 
 """
 python3 27frame.py

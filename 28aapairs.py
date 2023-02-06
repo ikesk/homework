@@ -11,9 +11,9 @@ aa = 'ACDEFGHIKLMNPQRSTVWY'
 count = 0
 
 for i in range(len(aa)):
-    for j in range(i+1, len(aa)):
-        print (aa[i], aa[j])
-        count += 1
+	for j in range(i + 1, len(aa)):
+		print(aa[i], aa[j])
+		count += 1
 
 print(count)
 

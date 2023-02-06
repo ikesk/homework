@@ -9,7 +9,6 @@ gc_percent = (dna.count('G') + dna.count('C')) / len(dna)
 
 print(f'{gc_percent:.2f}')
 
-
 """
 python3 24gc.py
 0.42

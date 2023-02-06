@@ -14,21 +14,20 @@ random.seed()
 
 dna = ''
 
-for i in range(1,31):
-    r = random.randint(1, 100)
-    if   r <= 30:
-        dna += 'A'
-    elif r > 30 and r <= 60:
-        dna += 'T'
-    elif r > 60 and r <= 80:
-        dna += 'C'
-    elif r > 80 and r <= 100:
-        dna += 'G'
+for i in range(1, 31):
+	r = random.randint(1, 100)
+	if r <= 30:
+		dna += 'A'
+	elif r > 30 and r <= 60:
+		dna += 'T'
+	elif r > 60 and r <= 80:
+		dna += 'C'
+	elif r > 80 and r <= 100:
+		dna += 'G'
 
 at_percent = (dna.count('A') + dna.count('T')) / len(dna)
 
 print(len(dna), at_percent, dna)
-      
 """
 python3 25atseq.py
 30 0.6666666666666666 ATTACCGTAATCTACTATTAAGTCACAACC

@@ -6,17 +6,14 @@
 
 # Note: you may not import math or any other library
 
-n=5
-sum=0
-fac=1
+n = 5
+rsum = 0
+fac = 1
 
-for i in range(1,n+1):
-    sum += i
-    fac *= i
-    
-print(n, sum, fac)
-
-
+for i in range(1, n + 1):
+	rsum += i
+	fac *= i
+print(n, rsum, fac)
 """
 python3 22sumfac.py
 5 15 120

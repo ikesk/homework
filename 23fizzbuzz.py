@@ -7,15 +7,15 @@
 
 # Note: this is a common interview question
 
-for i in range(1,101):
-    if i % 3 == 0 and i % 5 != 0:
-        print("Fizz")
-    elif i % 5 == 0 and i % 3 != 0:
-        print("Buzz")
-    elif i % 5 == 0 and i % 3 == 0:
-        print("FizzBuzz")
-    else:
-        print(i)
+for i in range(1, 101):
+	if i % 3 == 0 and i % 5 != 0:
+		print("Fizz")
+	elif i % 5 == 0 and i % 3 != 0:
+		print("Buzz")
+	elif i % 5 == 0 and i % 3 == 0:
+		print("FizzBuzz")
+	else:
+		print(i)
 
 """
 python3 23fizzbuzz.py
