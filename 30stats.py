@@ -15,9 +15,7 @@ for val in cmd_values:
 	num_list.append(float(val))
 
 # calculate count
-count = 0
-for val in num_list:
-	count += 1
+count = len(num_list)
 
 # calculate standard deviation
 std_dev = 0
