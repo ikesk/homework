@@ -34,12 +34,12 @@ else:
 	median = (num_list[count // 2])
 
 # print stats
-print(f'{"Count: "} {count}')
-print(f'{"Minimum: "} {min(num_list)}')
-print(f'{"Maximum: "} {max(num_list)}')
-print(f'{"Mean: "} {mean:.3f}')
-print(f'{"Std. dev: "} {std_dev:.3f}')
-print(f'{"Median "} {median:.3f}')
+print(f'{"Count:"} {count}')
+print(f'{"Minimum:"} {min(num_list)}')
+print(f'{"Maximum:"} {max(num_list)}')
+print(f'{"Mean:"} {mean:.3f}')
+print(f'{"Std. dev:"} {std_dev:.3f}')
+print(f'{"Median"} {median:.3f}')
 
 """
 python3 30stats.py 3 1 4 1 5
