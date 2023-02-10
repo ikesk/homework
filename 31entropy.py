@@ -28,7 +28,7 @@ for val in cmd_values:
 try:
 	assert (math.isclose(sum(num_list), 1.0))
 except:
-	print("Assertion error: values do not add up to 1")
+	print(f'Assertion error: values do not add up to 1', file=sys.stderr)
 	raise
 
 # calculate entropy
