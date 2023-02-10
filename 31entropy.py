@@ -20,7 +20,7 @@ num_list = []
 for val in cmd_values:
 	try:
 		num_list.append(float(val))
-	except ValueError as ve:
+	except:
 		print(f'Value error: cannot convert {val} to a number', file=sys.stderr)
 		raise
 
