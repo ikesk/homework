@@ -53,7 +53,8 @@ def wrap_sequence(seq):
 
         # Join lines into a string separated by newlines
         wrapped_seq = "\n".join(wrapped_lines)
-    return wrapped_seq
+        
+        return wrapped_seq
 
 
 # Process user input
